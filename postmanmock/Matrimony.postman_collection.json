@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "6ffe7234-078c-4d4e-ba91-d9dfbce5aa1f",
+		"name": "Matrimony",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30026974"
+	},
+	"item": [
+		{
+			"name": "Create User profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"MShami\",\r\n\"password\": \"1234567\",\r\n\"email\": \"m.shami@bcci.com\",\r\n\"firstname\": \"Mohamad\",\r\n\"lastname\": \"Shami\",\r\n\"date_of_birth\": null,\r\n\"time_of_birth\": null,\r\n\"gender\": \"Male\",\r\n\"contact_no\": null,\r\n\"religion\": \"Muslim\",\r\n\"caste\": null,\r\n\"community\": null,\r\n\"zodiac_sign\": null,\r\n\"gotra\": null,\r\n\"devak\": null,\r\n\"blood_group\": null,\r\n\"height\": 0,\r\n\"complexion\": null,\r\n\"mangal\": false,\r\n\"spectacles\": false,\r\n\"education\": \"VII\",\r\n\"occupation\": \"Cricketer\",\r\n\"income\": null,\r\n\"hobbies\": null,\r\n\"current_address\": \"Mumbai\",\r\n\"permanent_address\": \"Uttar Pradesh\",\r\n\"father\": null,\r\n\"mother\": null,\r\n\"sister\": null,\r\n\"brother\": null,\r\n\"parents_occupation\": null,\r\n\"family_wealth\": null,\r\n\"maternal_uncle\": null,\r\n\"paternal_uncle\": null,\r\n\"relatives\": null,\r\n\"nri\": false,\r\n\"pwd\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/userProfiles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"userProfiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/userProfiles/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"userProfiles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Profiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/userProfiles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"userProfiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Single Profile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"sshelke\",\r\n\"password\": null,\r\n\"email\": \"123456\",\r\n\"firstname\": \"Sushant\",\r\n\"lastname\": \"Shelke\",\r\n\"date_of_birth\": null,\r\n\"time_of_birth\": null,\r\n\"gender\": \"Male\",\r\n\"contact_no\": null,\r\n\"religion\": \"Hindu\",\r\n\"caste\": null,\r\n\"community\": null,\r\n\"zodiac_sign\": \"Cancer\",\r\n\"gotra\": null,\r\n\"devak\": null,\r\n\"blood_group\": null,\r\n\"height\": 0,\r\n\"complexion\": null,\r\n\"mangal\": false,\r\n\"spectacles\": false,\r\n\"education\": \"B.Tech\",\r\n\"occupation\": \"Service\",\r\n\"income\": null,\r\n\"hobbies\": null,\r\n\"current_address\": \"Pune\",\r\n\"permanent_address\": \"Latur\",\r\n\"father\": null,\r\n\"mother\": null,\r\n\"sister\": null,\r\n\"brother\": null,\r\n\"parents_occupation\": null,\r\n\"family_wealth\": null,\r\n\"maternal_uncle\": null,\r\n\"paternal_uncle\": null,\r\n\"relatives\": null,\r\n\"nri\": false,\r\n\"pwd\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/userProfiles/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"userProfiles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Single user profile",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/userProfiles/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"userProfiles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
